@@ -1,0 +1,1 @@
+{"hosting":{"public":"build/web","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"quick-broker-906f6","configurations":{"web":"1:304143906019:web:cfa660bd8092ad1ebb81d6","windows":"1:304143906019:web:84db48a5d164d8a9bb81d6"}}}}}}

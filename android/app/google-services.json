@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "754373477027",
+    "project_id": "quickbroker-fbaf4",
+    "storage_bucket": "quickbroker-fbaf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754373477027:android:72b97f1775d32e9f973516",
+        "android_client_info": {
+          "package_name": "com.quickbroker.app.quikbroker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754373477027-bttgabnchb8gef8k6t3n1g7dndgt4kki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwe_FxMDxpwAlp6rfz5V6pXwex1272J4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754373477027-bttgabnchb8gef8k6t3n1g7dndgt4kki.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "754373477027-keb64eeqigdefefsgo2nj065t092sbh4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quickbroker.app.quikbroker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
