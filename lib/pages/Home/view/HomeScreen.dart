@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quik_broker_admin/pages/HouseManagement/view/HouseManagementView.dart';
 import 'package:quik_broker_admin/pages/constant/MenuWidget.dart';
 import '../../HouseManagement/view/HouseManagement.dart';
 
@@ -48,6 +49,6 @@ class PageManagement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const HouseManagement();
+    return const Housemanagementview();
   }
 }
