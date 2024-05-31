@@ -4,8 +4,8 @@ import 'package:quik_broker_admin/pages/HouseManagement/widgets/LeftContainer.da
 import 'package:quik_broker_admin/pages/HouseManagement/widgets/RightContainer.dart';
 import 'package:quik_broker_admin/pages/constant/widgets/CustomAppbar.dart';
 
-class Housemanagementview extends StatelessWidget {
-  const Housemanagementview({super.key});
+class HouseManagementViewForHouseProperty extends StatelessWidget {
+  const HouseManagementViewForHouseProperty({super.key});
 
   @override
   Widget build(BuildContext context) {

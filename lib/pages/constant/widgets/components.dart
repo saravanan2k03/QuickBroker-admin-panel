@@ -37,3 +37,34 @@ Widget customTextFieldUsingInitialValue(BuildContext context, String labeltext,
     ),
   );
 }
+
+Widget customTextAreaUsingInitialvalue(BuildContext context, String labeltext,
+    String initialvalue, Function(String) onChange) {
+  return TextFormField(
+    keyboardType: TextInputType.multiline,
+    maxLines: null,
+    initialValue: initialvalue,
+    onChanged: onChange,
+    decoration: InputDecoration(
+      hintText: labeltext,
+      hintStyle: const TextStyle(
+        color: Colors.black,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(05),
+        borderSide: const BorderSide(
+          width: 2,
+          color: Colors.grey,
+        ), //<-- SEE HERE
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(05),
+
+        borderSide: const BorderSide(
+          width: 2,
+          color: Colors.grey,
+        ), //<-- SEE HERE
+      ),
+    ),
+  );
+}

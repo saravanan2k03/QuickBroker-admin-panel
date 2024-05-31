@@ -33,11 +33,12 @@ class CustomTextRow extends StatelessWidget {
           Visibility(
             visible: !editable,
             replacement: Container(
-                height: height(context, 0.06),
-                width: width(context, 0.15),
-                // color: Colors.red,
-                child: customTextFieldUsingInitialValue(
-                    context, title, textvalue, (value) {})),
+              height: height(context, 0.06),
+              width: width(context, 0.15),
+              // color: Colors.red,
+              child: customTextFieldUsingInitialValue(
+                  context, title, textvalue, (value) {}),
+            ),
             child: Container(
               height: height(context, 0.05),
               width: width(context, 0.15),
