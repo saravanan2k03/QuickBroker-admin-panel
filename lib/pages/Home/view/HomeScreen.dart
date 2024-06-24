@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quik_broker_admin/pages/Offer/view/OfferPage.dart';
 import 'package:quik_broker_admin/pages/constant/MenuWidget.dart';
 import '../../User/view/UserPage.dart';
 
@@ -48,6 +49,6 @@ class PageManagement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const UserPage();
+    return const Offerpage();
   }
 }

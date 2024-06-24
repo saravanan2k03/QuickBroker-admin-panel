@@ -3,38 +3,36 @@ import 'package:quik_broker_admin/Helper/app_setting.dart';
 import '../../constant/widgets/CustomAppbar.dart';
 import '../models/UserModel.dart';
 
-class UserPage extends StatefulWidget {
-  const UserPage({super.key});
+// ignore: must_be_immutable
+class UserPage extends StatelessWidget {
+  UserPage({super.key});
 
-  @override
-  State<UserPage> createState() => _UserPageState();
-}
-
-class _UserPageState extends State<UserPage> {
-  List<Usermodel> data = [];
-  Future<List<Usermodel>> value() async {
-    return data;
-  }
-
-  @override
-  void initState() {
-    super.initState();
-
-    final existingUser = Usermodel(
+  List<Usermodel> data = [
+    Usermodel(
       UID: '123',
       AVATAR: "saravanan",
       Email: 'john.doe@example.com',
       MOBILENO: '1234567890',
       Name: 'saravanan',
-    );
+    ),
+    Usermodel(
+      UID: '123',
+      AVATAR: "saravanan",
+      Email: 'john.doe@example.com',
+      MOBILENO: '1234567890',
+      Name: 'saravanan',
+    ),
+    Usermodel(
+      UID: '123',
+      AVATAR: "saravanan",
+      Email: 'john.doe@example.com',
+      MOBILENO: '1234567890',
+      Name: 'saravanan',
+    ),
+  ];
 
-    setState(() {
-      data.add(existingUser);
-      data.add(existingUser);
-      data.add(existingUser);
-      data.add(existingUser);
-      value();
-    });
+  Future<List<Usermodel>> value() async {
+    return data;
   }
 
   @override
