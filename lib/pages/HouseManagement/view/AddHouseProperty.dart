@@ -28,7 +28,7 @@ class AddHouseProperty extends StatelessWidget {
                     // color: Colors.yellow,
                     width: width(context, 0.20),
                     child: const Text(
-                      "House management / Add Property",
+                      "House management / Add House Property",
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,

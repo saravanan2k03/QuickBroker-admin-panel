@@ -165,32 +165,6 @@ class RightContainerForAddHouseProperty extends StatelessWidget {
         SizedBox(
           height: height(context, 0.02),
         ),
-        // Row(
-        //   children: [
-        //     SizedBox(
-        //       height: height(context, 0.06),
-        //       width: width(context, 0.20),
-        //       child: customTextFieldUsingInitialValue(
-        //           context, "Name", "M.Saravanan", (value) {}),
-        //     ),
-        //   ],
-        // ),
-        // Padding(
-        //   padding: const EdgeInsets.only(top: 10),
-        //   child: Row(
-        //     children: [
-        //       SizedBox(
-        //         height: height(context, 0.06),
-        //         width: width(context, 0.20),
-        //         child: customTextFieldUsingInitialValue(
-        //             context, "Number", "+91 7010036887", (value) {}),
-        //       ),
-        //     ],
-        //   ),
-        // ),
-        // SizedBox(
-        //   height: height(context, 0.03),
-        // ),
         const CustomButtons(
           enabled: false,
         ),
