@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/pages/constant/MenuWidget.dart';
-import '../../HouseManagement/view/AddLandProperty.dart';
+import '../../User/view/UserPage.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -48,6 +48,6 @@ class PageManagement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AddLandProperty();
+    return const UserPage();
   }
 }
