@@ -15,35 +15,37 @@ class MenuWidget extends StatelessWidget {
         child: Obx(
           () => Column(
             children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                child: Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      // color: Colors.blue,
-                      width: height(context, 0.20),
-                      child: const Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'QuickBroker',
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+              SingleChildScrollView(
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  child: Row(
+                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        // color: Colors.blue,
+                        width: height(context, 0.20),
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'QuickBroker',
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          Icon(
-                            Icons.arrow_circle_down_outlined,
-                            color: Colors.white,
-                            weight: 0.1,
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
+                            Icon(
+                              Icons.arrow_circle_down_outlined,
+                              color: Colors.white,
+                              weight: 0.1,
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               // dashboard_outlined
@@ -87,21 +89,24 @@ class MenuWidget extends StatelessWidget {
                                   padding: const EdgeInsets.only(left: 05),
                                   // child: Icon(
                                   //   Icons.money,
-                                  //   color: controller.isexpanded.value
-                                  //       ? Colors.black
-                                  //       : Colors.white,
+                                  // color: controller.isexpanded.value
+                                  //     ? Colors.black
+                                  //     : Colors.white,
                                   // ),
                                   child: SvgPicture.asset(
                                     "images/customer_request_svg.svg",
-                                    height: 15,
-                                    width: 15,
-                                    colorFilter: const ColorFilter.mode(
-                                        Colors.red, BlendMode.srcIn),
+                                    height: 22,
+                                    width: 22,
+                                    colorFilter: ColorFilter.mode(
+                                        controller.isexpanded.value
+                                            ? Colors.black
+                                            : Colors.white,
+                                        BlendMode.srcIn),
                                   ),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 11),
-                                  child: Container(
+                                  child: SizedBox(
                                     width: width(context, 0.08),
                                     child: Text(
                                       'Customer Request',
@@ -263,6 +268,58 @@ class MenuWidget extends StatelessWidget {
                         : Colors.white,
                   ),
                 ),
+              ),
+              InkWell(
+                onTap: () {
+                  controller.changeIndex(RxInt(7));
+                },
+                child: CustomTabbar(
+                  enabled: controller.pageIndex.value == 7,
+                  name: "Chat",
+                  icon: Icon(
+                    Icons.chat_outlined,
+                    color: controller.pageIndex.value == 7
+                        ? Colors.black
+                        : Colors.white,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        controller.changeIndex(RxInt(8));
+                      },
+                      child: CustomTabbar(
+                        enabled: controller.pageIndex.value == 8,
+                        name: "Setting",
+                        icon: Icon(
+                          Icons.settings_outlined,
+                          color: controller.pageIndex.value == 8
+                              ? Colors.black
+                              : Colors.white,
+                        ),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        controller.changeIndex(RxInt(9));
+                      },
+                      child: CustomTabbar(
+                        enabled: controller.pageIndex.value == 9,
+                        name: "Logout",
+                        icon: Icon(
+                          Icons.logout_outlined,
+                          color: controller.pageIndex.value == 9
+                              ? Colors.black
+                              : Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
@@ -300,7 +357,7 @@ class CustomTabbar extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 02),
-              child: Container(
+              child: SizedBox(
                 // color: Colors.blue,
                 width: width(context, 0.10),
                 child: Text(
