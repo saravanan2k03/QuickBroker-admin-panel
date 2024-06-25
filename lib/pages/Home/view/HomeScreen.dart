@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/pages/Offer/view/OfferPage.dart';
 import 'package:quik_broker_admin/pages/constant/MenuWidget.dart';
-import '../../User/view/UserPage.dart';
+
+import '../../PushNotification/view/PushNotification.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -49,6 +50,6 @@ class PageManagement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Offerpage();
+    return const Pushnotification();
   }
 }
