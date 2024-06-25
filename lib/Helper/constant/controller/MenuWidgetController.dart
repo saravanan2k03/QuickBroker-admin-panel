@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
 import 'package:quik_broker_admin/pages/Chat/view/ChatPage.dart';
 import 'package:quik_broker_admin/pages/CustomerRequest/views/BuyRequest.dart';
 import 'package:quik_broker_admin/pages/CustomerRequest/views/PackerRequest.dart';

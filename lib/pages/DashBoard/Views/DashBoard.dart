@@ -34,7 +34,7 @@ class DashBoard extends StatelessWidget {
                           fontWeight: FontWeight.w600),
                     ),
                   ),
-                  CustomAppbar()
+                  const CustomAppbar()
                 ],
               ),
             ),

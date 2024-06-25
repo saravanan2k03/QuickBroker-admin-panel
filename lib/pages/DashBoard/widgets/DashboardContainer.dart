@@ -33,7 +33,7 @@ class DashboarCustomContainer extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Container(
+                    SizedBox(
                       // color: Colors.red,
                       width: width(context, 0.19),
                       child: Text(
@@ -48,7 +48,7 @@ class DashboarCustomContainer extends StatelessWidget {
                     ),
                   ],
                 ),
-                Container(
+                SizedBox(
                   // color: Colors.yellow,
                   width: width(context, 0.19),
                   height: height(context, 0.06),
@@ -63,7 +63,7 @@ class DashboarCustomContainer extends StatelessWidget {
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
-                      Container(
+                      SizedBox(
                         // color: Colors.blue,
                         height: imageheight,
                         width: imagewidth,

@@ -12,7 +12,7 @@ class CustomtextcolumnAddHouseProperty extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
+        SizedBox(
           width: width(context, 0.15),
           child: Column(
             children: [
@@ -29,7 +29,7 @@ class CustomtextcolumnAddHouseProperty extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 05),
-                child: Container(
+                child: SizedBox(
                   height: height(context, 0.06),
                   width: width(context, 0.15),
                   // color: Colors.red,

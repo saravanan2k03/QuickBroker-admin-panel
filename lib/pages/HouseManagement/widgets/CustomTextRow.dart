@@ -32,7 +32,7 @@ class CustomTextRow extends StatelessWidget {
           ),
           Visibility(
             visible: !editable,
-            replacement: Container(
+            replacement: SizedBox(
               height: height(context, 0.06),
               width: width(context, 0.15),
               // color: Colors.red,

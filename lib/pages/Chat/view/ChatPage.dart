@@ -88,7 +88,7 @@ class Chatpage extends StatelessWidget {
                         ),
                         child: Column(
                           children: [
-                            Container(
+                            SizedBox(
                               width: width(context, 0.53),
                               height: height(context, 0.62),
                               // color: Colors.red,

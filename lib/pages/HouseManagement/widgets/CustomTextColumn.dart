@@ -17,7 +17,7 @@ class Customtextcolumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
+        SizedBox(
           // height: height(context, 0.08),
           width: width(context, 0.15),
           // color: Colors.red,
@@ -36,7 +36,7 @@ class Customtextcolumn extends StatelessWidget {
               ),
               Visibility(
                 visible: !editable,
-                replacement: Container(
+                replacement: SizedBox(
                     height: height(context, 0.06),
                     width: width(context, 0.15),
                     // color: Colors.red,

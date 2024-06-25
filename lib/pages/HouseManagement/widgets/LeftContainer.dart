@@ -9,7 +9,7 @@ class LeftContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -145,7 +145,7 @@ class LeftContainer extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 05),
-            child: Container(
+            child: SizedBox(
               // height: height(context, 0.40),
               // color: Colors.blueAccent,
               width: width(context, 0.35),

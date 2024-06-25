@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 double height(context, double hgt) {
@@ -17,6 +19,7 @@ Widget divider(context, double hgt) {
 
 String app_name = "Quikbroker";
 Color app_bar_color = const Color(0xffd8232a);
+// ignore: use_full_hex_values_for_flutter_colors
 Color cardcolor = const Color(0xffd455a64);
 Widget custom_app_bar() {
   return SliverAppBar(

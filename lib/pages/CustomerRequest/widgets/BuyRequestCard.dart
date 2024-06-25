@@ -41,7 +41,7 @@ class BuyRequestContainer extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height,
             width: width(context, 0.13),
             // color: Colors.red,
@@ -75,7 +75,7 @@ class BuyRequestContainer extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height,
             width: width(context, 0.15),
             // color: Colors.blue,
@@ -200,7 +200,7 @@ class BuyRequestContainer extends StatelessWidget {
           SizedBox(
             width: width(context, 0.009),
           ),
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height,
             width: width(context, 0.15),
             // color: Colors.yellow,
@@ -315,7 +315,7 @@ class BuyRequestContainer extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height,
             width: width(context, 0.15),
             // color: Colors.green,

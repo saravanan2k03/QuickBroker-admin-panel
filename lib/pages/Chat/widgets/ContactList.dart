@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../../Helper/app_setting.dart';
 import 'ContactListCard.dart';
