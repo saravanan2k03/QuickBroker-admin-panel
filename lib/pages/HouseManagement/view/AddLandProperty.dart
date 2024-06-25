@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/Helper/app_setting.dart';
-import '../../constant/widgets/CustomAppbar.dart';
-import '../../constant/widgets/components.dart';
+import '../../../Helper/constant/widgets/CustomAppbar.dart';
+import '../../../Helper/constant/widgets/components.dart';
 import '../widgets/CustomTextButton.dart';
 import '../widgets/LeftContainerForAddLand.dart';
 

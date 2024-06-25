@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:quik_broker_admin/Helper/app_setting.dart';
-import 'package:quik_broker_admin/pages/constant/controller/MenuWidgetController.dart';
+import 'package:quik_broker_admin/Helper/constant/controller/MenuWidgetController.dart';
 
 class MenuWidget extends StatelessWidget {
   const MenuWidget({super.key});

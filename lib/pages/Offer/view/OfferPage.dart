@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../Helper/app_setting.dart';
-import '../../constant/widgets/CustomAppbar.dart';
+import '../../../Helper/constant/widgets/CustomAppbar.dart';
 import '../widgets/OfferCard.dart';
 
 class Offerpage extends StatelessWidget {

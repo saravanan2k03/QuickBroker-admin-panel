@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/Helper/app_setting.dart';
 import 'package:quik_broker_admin/pages/HouseManagement/widgets/HouseManagementContainer.dart';
-import 'package:quik_broker_admin/pages/constant/widgets/CustomAppbar.dart';
+import 'package:quik_broker_admin/Helper/constant/widgets/CustomAppbar.dart';
 
 class HouseManagement extends StatelessWidget {
   const HouseManagement({super.key});

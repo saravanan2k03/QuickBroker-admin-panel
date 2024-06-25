@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/Helper/app_setting.dart';
 import 'package:quik_broker_admin/pages/HouseManagement/widgets/CustomTextButton.dart';
 import 'package:quik_broker_admin/pages/HouseManagement/widgets/CustomtextcolumnAddHouseProperty.dart';
-import 'package:quik_broker_admin/pages/constant/widgets/components.dart';
+import 'package:quik_broker_admin/Helper/constant/widgets/components.dart';
 
 class RightContainerForAddHouseProperty extends StatelessWidget {
   const RightContainerForAddHouseProperty({

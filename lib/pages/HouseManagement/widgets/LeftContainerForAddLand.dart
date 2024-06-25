@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quik_broker_admin/pages/constant/widgets/components.dart';
+import 'package:quik_broker_admin/Helper/constant/widgets/components.dart';
 import '../../../Helper/app_setting.dart';
 import 'CustomTextRowForAddHouseProperty.dart';
 
