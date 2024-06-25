@@ -1,5 +1,6 @@
 # Miscellaneous
 *.class
+firebase_options.dart
 *.log
 *.pyc
 *.swp
