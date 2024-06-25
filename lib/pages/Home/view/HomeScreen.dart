@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:get/state_manager.dart';
 import 'package:quik_broker_admin/Helper/constant/MenuWidget.dart';
+import 'package:quik_broker_admin/pages/Chat/view/chatPage.dart';
+import '../../../Helper/constant/controller/MenuWidgetController.dart';
 import '../../PushNotification/view/PushNotification.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -30,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 flex: 5,
                 child: Container(
                   color: const Color.fromARGB(255, 13, 26, 67),
-                  child: const PageManagement(),
+                  child: PageManagement(),
                 ),
               )
             ],
@@ -43,12 +48,12 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class PageManagement extends StatelessWidget {
-  const PageManagement({
+  PageManagement({
     super.key,
   });
-
+  final MenuWidgetController controller = Get.put(MenuWidgetController());
   @override
   Widget build(BuildContext context) {
-    return const Pushnotification();
+    return Obx(() => controller.pages[controller.pageIndex.value]);
   }
 }

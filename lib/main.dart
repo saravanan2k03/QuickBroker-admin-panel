@@ -22,6 +22,9 @@ class MyApp extends StatelessWidget {
         colorScheme:
             ColorScheme.fromSeed(seedColor: const Color.fromRGBO(4, 28, 50, 1)),
         useMaterial3: true,
+        // scrollbarTheme: ScrollbarThemeData(
+        //   thumbColor: WidgetStateProperty.all(Colors.transparent),
+        // ),
       ),
       home: const HomeScreen(),
     );

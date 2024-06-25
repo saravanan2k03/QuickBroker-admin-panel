@@ -16,8 +16,8 @@ Widget divider(context, double hgt) {
 }
 
 String app_name = "Quikbroker";
-Color app_bar_color = Color(0xffd8232a);
-Color cardcolor = Color(0xffd455A64);
+Color app_bar_color = const Color(0xffd8232a);
+Color cardcolor = const Color(0xffd455a64);
 Widget custom_app_bar() {
   return SliverAppBar(
     floating: true,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../Helper/app_setting.dart';
 
 class NotificationCard extends StatelessWidget {

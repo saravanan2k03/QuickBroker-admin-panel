@@ -305,7 +305,7 @@ class MenuWidget extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        controller.changeIndex(RxInt(9));
+                        // controller.changeIndex(RxInt(9));
                       },
                       child: CustomTabbar(
                         enabled: controller.pageIndex.value == 9,
