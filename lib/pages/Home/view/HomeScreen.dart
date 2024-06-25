@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quik_broker_admin/pages/Offer/view/OfferPage.dart';
 import 'package:quik_broker_admin/pages/constant/MenuWidget.dart';
-
 import '../../PushNotification/view/PushNotification.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -32,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 flex: 5,
                 child: Container(
                     color: const Color.fromARGB(255, 13, 26, 67),
-                    child: const PageManagement()),
+                    child: const PageManagement(),),
               )
             ],
           );

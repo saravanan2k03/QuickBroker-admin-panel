@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:quik_broker_admin/Helper/app_setting.dart';
 import 'package:quik_broker_admin/pages/constant/controller/MenuWidgetController.dart';
@@ -84,11 +85,18 @@ class MenuWidget extends StatelessWidget {
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.only(left: 05),
-                                  child: Icon(
-                                    Icons.money,
-                                    color: controller.isexpanded.value
-                                        ? Colors.black
-                                        : Colors.white,
+                                  // child: Icon(
+                                  //   Icons.money,
+                                  //   color: controller.isexpanded.value
+                                  //       ? Colors.black
+                                  //       : Colors.white,
+                                  // ),
+                                  child: SvgPicture.asset(
+                                    "images/customer_request_svg.svg",
+                                    height: 15,
+                                    width: 15,
+                                    colorFilter: const ColorFilter.mode(
+                                        Colors.red, BlendMode.srcIn),
                                   ),
                                 ),
                                 Padding(
