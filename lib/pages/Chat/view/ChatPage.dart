@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/Helper/constant/widgets/CustomAppbar.dart';
+import 'package:quik_broker_admin/pages/Chat/widgets/ChatSection.dart';
+import 'package:quik_broker_admin/pages/Chat/widgets/ChatUserDetail.dart';
+import 'package:quik_broker_admin/pages/Chat/widgets/MessageTextField.dart';
 import '../../../Helper/app_setting.dart';
 import '../widgets/ContactList.dart';
 
@@ -60,16 +63,9 @@ class Chatpage extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10),
-                        child: Container(
-                          height: height(context, 0.10),
-                          width: width(context, 0.53),
-                          decoration: BoxDecoration(
-                            color: const Color(0xffD7D7D7),
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: ChatUserDetail(),
                       ),
                       SizedBox(
                         width: width(context, 0.53),
@@ -79,34 +75,7 @@ class Chatpage extends StatelessWidget {
                           // height: height(context, 0.02),
                         ),
                       ),
-                      Container(
-                        height: height(context, 0.70),
-                        width: width(context, 0.53),
-                        decoration: BoxDecoration(
-                          color: const Color(0xffD7D7D7),
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: Column(
-                          children: [
-                            SizedBox(
-                              width: width(context, 0.53),
-                              height: height(context, 0.62),
-                              // color: Colors.red,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 05),
-                              child: Container(
-                                height: height(context, 0.07),
-                                width: width(context, 0.53),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
+                      const ChatSection(),
                     ],
                   )
                 ],

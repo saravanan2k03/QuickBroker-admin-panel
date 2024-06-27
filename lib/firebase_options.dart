@@ -81,5 +81,4 @@ class DefaultFirebaseOptions {
     storageBucket: 'quick-broker-906f6.appspot.com',
     measurementId: 'G-TXPVFB17KD',
   );
-
 }
