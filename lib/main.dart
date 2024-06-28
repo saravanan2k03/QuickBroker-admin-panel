@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/firebase_options.dart';
+import 'package:quik_broker_admin/pages/login/views/LoginPage.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'pages/Home/view/HomeScreen.dart';
 
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         //   thumbColor: WidgetStateProperty.all(Colors.transparent),
         // ),
       ),
-      home: const HomeScreen(),
+      home: const LoginPage(),
     );
   }
 }

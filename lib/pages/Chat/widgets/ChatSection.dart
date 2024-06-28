@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/Helper/app_setting.dart';
 import 'package:quik_broker_admin/pages/Chat/widgets/ChatCards.dart';
