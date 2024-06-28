@@ -26,7 +26,7 @@ class LeftContainer extends StatelessWidget {
               SizedBox(
                 width: width(context, 0.10),
               ),
-              Container(
+              SizedBox(
                 height: height(context, 0.55),
                 width: width(context, 0.30),
                 // color: Colors.red,

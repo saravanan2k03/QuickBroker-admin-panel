@@ -9,6 +9,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const LeftContainer(),
           Expanded(
