@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:quik_broker_admin/Helper/constant/widgets/CustomAppbar.dart';
 import 'package:quik_broker_admin/pages/Chat/widgets/ChatSection.dart';
 import 'package:quik_broker_admin/pages/Chat/widgets/ChatUserDetail.dart';
-import 'package:quik_broker_admin/pages/Chat/widgets/MessageTextField.dart';
 import '../../../Helper/app_setting.dart';
 import '../widgets/ContactList.dart';
 
@@ -75,7 +74,7 @@ class Chatpage extends StatelessWidget {
                           // height: height(context, 0.02),
                         ),
                       ),
-                      const ChatSection(),
+                      ChatSection(),
                     ],
                   )
                 ],
