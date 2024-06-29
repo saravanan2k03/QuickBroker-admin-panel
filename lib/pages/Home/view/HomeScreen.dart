@@ -21,20 +21,21 @@ class _HomeScreenState extends State<HomeScreen> {
           return Row(
             children: [
               Expanded(
-                  child: Container(
-                color: const Color.fromARGB(237, 4, 27, 101),
-                child: const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: MenuWidget(),
+                child: Container(
+                  color: const Color.fromARGB(237, 4, 27, 101),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: MenuWidget(),
+                  ),
                 ),
-              )),
+              ),
               Expanded(
                 flex: 5,
                 child: Container(
                   color: const Color.fromARGB(255, 13, 26, 67),
                   child: PageManagement(),
                 ),
-              )
+              ),
             ],
           );
         }

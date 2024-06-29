@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:quik_broker_admin/firebase_options.dart';
-import 'package:quik_broker_admin/pages/login/views/LoginPage.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
-import 'pages/Home/view/HomeScreen.dart';
+import 'pages/SplashScreen/views/SplashScreen.dart';
 
 Future<void> main() async {
   runZonedGuarded(() async {
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Quik broker admin',
       theme: ThemeData(
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         //   thumbColor: WidgetStateProperty.all(Colors.transparent),
         // ),
       ),
-      home: const LoginPage(),
+      home: const Splashscreen(),
     );
   }
 }
