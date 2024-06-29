@@ -2,7 +2,10 @@ import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quik_broker_admin/Helper/constant/controller/ConstantController.dart';
 import 'package:quik_broker_admin/firebase_options.dart';
+import 'package:quik_broker_admin/pages/Home/view/HomeScreen.dart';
+import 'package:quik_broker_admin/pages/login/views/LoginPage.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'pages/SplashScreen/views/SplashScreen.dart';
 
@@ -39,7 +42,23 @@ class MyApp extends StatelessWidget {
         //   thumbColor: WidgetStateProperty.all(Colors.transparent),
         // ),
       ),
-      home: const Splashscreen(),
+      home: FutureBuilder(
+        future: Future.delayed(
+          const Duration(seconds: 2),
+        ),
+        builder: (context, snapshot) {
+          final Constantcontroller controller = Get.put(Constantcontroller());
+          if (snapshot.connectionState == ConnectionState.done) {
+            return Obx(
+              () => controller.isLogin.value
+                  ? const HomeScreen()
+                  : const LoginPage(),
+            );
+          } else {
+            return const Splashscreen();
+          }
+        },
+      ),
     );
   }
 }
