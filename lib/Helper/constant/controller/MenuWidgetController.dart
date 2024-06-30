@@ -6,6 +6,7 @@ import 'package:quik_broker_admin/pages/DashBoard/Views/DashBoard.dart';
 import 'package:quik_broker_admin/pages/HouseManagement/view/HouseManagement.dart';
 import 'package:quik_broker_admin/pages/Offer/view/OfferPage.dart';
 import 'package:quik_broker_admin/pages/PushNotification/view/PushNotification.dart';
+import 'package:quik_broker_admin/pages/Setting/view/Settings.dart';
 import 'package:quik_broker_admin/pages/User/view/UserPage.dart';
 
 class MenuWidgetController extends GetxController {
@@ -28,5 +29,6 @@ class MenuWidgetController extends GetxController {
     const Offerpage(),
     const Pushnotification(),
     const Chatpage(),
+    const Settings(),
   ].obs;
 }
