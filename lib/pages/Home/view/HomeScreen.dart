@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quik_broker_admin/Helper/constant/MenuWidget.dart';
-import 'package:quik_broker_admin/pages/Setting/view/Settings.dart';
 import '../../../Helper/constant/controller/MenuWidgetController.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -52,7 +51,7 @@ class PageManagement extends StatelessWidget {
   final MenuWidgetController controller = Get.put(MenuWidgetController());
   @override
   Widget build(BuildContext context) {
-    // return Obx(() => controller.pages[controller.pageIndex.value]);
-    return const Settings();
+    return Obx(() => controller.pages[controller.pageIndex.value]);
+    // return const Settings();
   }
 }
