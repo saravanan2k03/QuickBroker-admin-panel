@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:quik_broker_admin/Helper/app_setting.dart';
+import 'package:quik_broker_admin/pages/DashBoard/Controller/DashboardController.dart';
 import 'package:quik_broker_admin/pages/DashBoard/widgets/DashboardContainer.dart';
 import 'package:quik_broker_admin/Helper/constant/widgets/CustomAppbar.dart';
 
 class DashBoard extends StatelessWidget {
-  const DashBoard({super.key});
+  DashBoard({super.key});
+
+  final DashBoardController _dashBoardController =
+      Get.put(DashBoardController());
 
   @override
   Widget build(BuildContext context) {
@@ -44,37 +49,44 @@ class DashBoard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                DashboarCustomContainer(
-                  title: "Total Users",
-                  image: Image.asset(
-                    "images/usericon.png",
+                Obx(
+                  () => DashboarCustomContainer(
+                    title: "Total Users",
+                    image: Image.asset(
+                      "images/usericon.png",
+                    ),
+                    data: _dashBoardController.userCount.value.toString(),
+                    imageheight: 45,
+                    imagewidth: 45,
                   ),
-                  data: "20",
-                  imageheight: 45,
-                  imagewidth: 45,
                 ),
                 SizedBox(
                   width: width(context, 0.03),
                 ),
-                DashboarCustomContainer(
-                  title: "Total House",
-                  image: Image.asset(
-                    "images/houseicon.png",
-                    fit: BoxFit.cover,
+                Obx(
+                  () => DashboarCustomContainer(
+                    title: "Total Property",
+                    image: Image.asset(
+                      "images/houseicon.png",
+                      fit: BoxFit.cover,
+                    ),
+                    data: _dashBoardController.totalProperty.value.toString(),
+                    imageheight: 55,
+                    imagewidth: 55,
                   ),
-                  data: "10",
-                  imageheight: 55,
-                  imagewidth: 55,
                 ),
                 SizedBox(
                   width: width(context, 0.03),
                 ),
-                DashboarCustomContainer(
-                  title: "Total House Request",
-                  image: Image.asset("images/totalhouserequest.png"),
-                  data: "40",
-                  imageheight: 45,
-                  imagewidth: 45,
+                Obx(
+                  () => DashboarCustomContainer(
+                    title: "Total Property Request",
+                    image: Image.asset("images/totalhouserequest.png"),
+                    data: _dashBoardController.totalPropertyRequest.value
+                        .toString(),
+                    imageheight: 45,
+                    imagewidth: 45,
+                  ),
                 ),
               ],
             ),
@@ -84,32 +96,40 @@ class DashBoard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                DashboarCustomContainer(
-                  title: "Total Packer Request",
-                  image: Image.asset("images/totalhouserequest.png"),
-                  data: "33",
-                  imageheight: 45,
-                  imagewidth: 45,
+                Obx(
+                  () => DashboarCustomContainer(
+                    title: "Total Packer Request",
+                    image: Image.asset("images/totalhouserequest.png"),
+                    data: _dashBoardController.totalPackerRequest.value
+                        .toString(),
+                    imageheight: 45,
+                    imagewidth: 45,
+                  ),
                 ),
                 SizedBox(
                   width: width(context, 0.03),
                 ),
-                DashboarCustomContainer(
-                  title: "Current Running Offer",
-                  data: "5",
-                  image: Image.asset("images/customruningoffer.png"),
-                  imageheight: 45,
-                  imagewidth: 45,
+                Obx(
+                  () => DashboarCustomContainer(
+                    title: "Current Running Offer",
+                    data: _dashBoardController.offers.value.toString(),
+                    image: Image.asset("images/customruningoffer.png"),
+                    imageheight: 45,
+                    imagewidth: 45,
+                  ),
                 ),
                 SizedBox(
                   width: width(context, 0.03),
                 ),
-                DashboarCustomContainer(
-                  title: "Total  Total House Sold",
-                  image: Image.asset("images/soldpropertyimage.png"),
-                  imageheight: 45,
-                  imagewidth: 45,
-                  data: "5",
+                Obx(
+                  () => DashboarCustomContainer(
+                    title: "Total Property Sold",
+                    image: Image.asset("images/soldpropertyimage.png"),
+                    imageheight: 45,
+                    imagewidth: 45,
+                    data:
+                        _dashBoardController.totalSoldProperty.value.toString(),
+                  ),
                 ),
               ],
             ),

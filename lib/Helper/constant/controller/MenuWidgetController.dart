@@ -21,7 +21,7 @@ class MenuWidgetController extends GetxController {
   }
 
   RxList<dynamic> pages = [
-    const DashBoard(),
+    DashBoard(),
     const BuyRequest(),
     const PackerRequest(),
     const HouseManagement(),

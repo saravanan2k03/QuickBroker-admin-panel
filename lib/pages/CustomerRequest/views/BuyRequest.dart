@@ -44,14 +44,15 @@ class BuyRequest extends StatelessWidget {
             SizedBox(
               height: height(context, 0.85),
               child: ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: 05,
-                  itemBuilder: (context, index) {
-                    return const Padding(
-                      padding: EdgeInsets.all(10),
-                      child: BuyRequestContainer(),
-                    );
-                  }),
+                shrinkWrap: true,
+                itemCount: 05,
+                itemBuilder: (context, index) {
+                  return const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: BuyRequestContainer(),
+                  );
+                },
+              ),
             ),
 
             ///BuyRequest Container
